@@ -29,9 +29,10 @@ margin-left: 0;
 .skill-item {
   flex-basis: calc((100%-120) / 4);
   width: 270px;
-}
-.skill-item:not(:first-child){
+
+  &:not(:first-child){
   margin-left: 30px;
+  }
 }
 
 .icon-group{
@@ -59,4 +60,3 @@ margin-left: 0;
   letter-spacing: 0.03em;
   color: var(--third-color);
 }
-

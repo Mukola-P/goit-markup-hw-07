@@ -13,14 +13,14 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
   color 250ms cubic-bezier(0.4, 0, 0.2, 1),
   box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.nav-button:hover,
-.nav-button:focus {
+  &:hover,
+  &:focus {
   background-color: var(--secondary-color);
   color: var(--white-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
- border-radius: 4px;
+  border-radius: 4px;
+}
 }
 
 .card-title {
@@ -30,7 +30,6 @@
   line-height: 2;
 
   color: var(--accent-color);
-
 }
 
 .card-text {
@@ -42,6 +41,7 @@
 
   color: var(--third-color);
 }
+
 .description{
   padding: 20px 24px;
   border-left: 1px solid #EEEEEE;
@@ -58,10 +58,10 @@
 }
 .list-butt{
   display: inline-block;
-}
-.list-butt:not(:last-child){
-margin-right: 8px;
 
+  &:not(:last-child){
+  margin-right: 8px;
+}
 }
 
 .card-list{
@@ -75,23 +75,30 @@ margin-right: 8px;
   margin-right: 30px;
   margin-bottom: 30px;
   
-}
-.portfolio-card:nth-child(3n){
+  &:nth-child(3n){
   margin-right: 0px;
+}
 }
 
 .card-way{
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: block;
+
+  &:hover,
+  &:focus{        
+  display: block;
+  box-shadow: 0px 1px 1px 
+  rgba(0, 0, 0, 0.12), 0px 4px 4px 
+  rgba(0, 0, 0, 0.06), 1px 4px 6px 
+  rgba(0, 0, 0, 0.16);
+
+  &:hover .overlay,
+  &:focus .overlay{
+  transform: translateY(0%);
 }
-.card-way:hover,
-.card-way:focus{        
-display: block;
-box-shadow: 0px 1px 1px 
-rgba(0, 0, 0, 0.12), 0px 4px 4px 
-rgba(0, 0, 0, 0.06), 1px 4px 6px 
-rgba(0, 0, 0, 0.16);
 }
+}
+
 .imgwork{
   width: 370px;
 
@@ -118,9 +125,5 @@ letter-spacing: 0.03em;
 
 transform: translateY(100%);
 transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.card-way:hover .overlay,
-.card-way:focus .overlay{
-  transform: translateY(0%);
 }
