@@ -2,7 +2,7 @@
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.header-bord {
+.bord {
   border-bottom: 1px solid #ECECEC;
 }
 .header-cont {
@@ -22,20 +22,12 @@
   padding-left: 0px;
 }
 
-.logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
-  margin-right: 93px;
-}
-.logo-footer{
-  padding: auto;
-}
 .menu {
   display: flex;
   align-items: center;
   padding-left: 0px;
 }
-.menu-item:not(:last-child) {
+.menu__item:not(:last-child) {
   margin-right: 40px;
 }
 
@@ -101,26 +93,8 @@
   }
 }
 
-.logo,
-.logo-footer,
-.logo-text {
-  font-family: var(--secondary-font);
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  
 
-  color: var(--accent-color);
-}
-
-.logo-text {
-  color: var(--secondary-color);
-}
-.logo-txt {
-  color: var(--white-color);
-}
-
-.menu-link {
+.menu__link {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;

@@ -2,11 +2,11 @@
   background-color: #F5F4FA;
 }
 
-.team-roster {
+.team__roster {
   margin-bottom: 94px;
 }
 
-.team-roster{
+.team__roster{
  display: flex;
  padding-left: 0px;
 justify-content: space-between;
@@ -14,18 +14,18 @@ margin-top: 50px;
 
 }
 
-.team-list{
+.team__list{
   box-shadow: 0px 1px 3px var(--third-color);
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-member,
-.team-activity{
+.team__member,
+.team__activity{
   background-color: #FFFFFF;
   border-radius: 3px
 }
 
-.team-title {
+.team__title {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
@@ -36,7 +36,7 @@ margin-top: 50px;
   margin: 0px;
 }
 
-.team-member {
+.team__member {
   font-size: 16px;
   line-height: 0.84;
   font-weight: 500;
@@ -45,7 +45,7 @@ margin-top: 50px;
   color: var(--accent-color);
 }
 
-.team-activity {
+.team__activity {
   font-size: 16px;
   line-height: 1.89;
 margin-top: 10px;
